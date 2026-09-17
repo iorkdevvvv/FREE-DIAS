@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f3df" />
+    <meta
+      name="description"
+      content="Free Claim Dias — Developed by Jaymar Alcedo"
+    />
+    <title>FREE CLAIM DIAS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="topbar">
+        <div class="brand">FREE<span>CLAIM</span> DIAS</div>
+      </header>
+
+      <section class="hero" id="claim">
+        <span class="sparkle sparkle-purple sparkle-one" aria-hidden="true">✦</span>
+        <span class="sparkle sparkle-black sparkle-two" aria-hidden="true">✧</span>
+        <span class="sparkle sparkle-blue sparkle-three" aria-hidden="true">✦</span>
+        <span class="sparkle sparkle-black sparkle-four" aria-hidden="true">✧</span>
+
+        <div class="hero-copy">
+          <p class="eyebrow">COMMUNITY EVENT</p>
+          <h1>Claim your<br /><em>FREE DIAS</em></h1>
+          <p class="hero-subtitle">
+            Enter your game details to unlock<br class="desktop-break" />
+            today's exclusive surprise.
+          </p>
+        </div>
+
+        <div class="claim-card" aria-labelledby="claim-title">
+          <form id="claim-form" novalidate>
+            <h2 id="claim-title">Enter your game ID</h2>
+            <p class="form-note">Use the ID shown on your game profile.</p>
+
+            <label class="sr-only" for="user-id">User ID</label>
+            <div class="input-wrap">
+              <input
+                id="user-id"
+                name="user-id"
+                type="text"
+                inputmode="numeric"
+                autocomplete="off"
+                placeholder="User ID"
+                maxlength="15"
+                required
+              />
+            </div>
+
+            <label class="sr-only" for="zone-id">Zone ID</label>
+            <div class="input-wrap">
+              <input
+                id="zone-id"
+                name="zone-id"
+                type="text"
+                inputmode="numeric"
+                autocomplete="off"
+                placeholder="Zone ID"
+                maxlength="8"
+                required
+              />
+            </div>
+
+            <p class="error-message" id="error-message" role="alert"></p>
+            <button class="continue-button" type="submit">
+              <span>Continue</span>
+            </button>
+          </form>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 FREE DIAS. ALL RIGHTS RESERVED.</p>
+      <p>DEVELOPED BY <strong>JAYMAR ALCEDO</strong></p>
+    </footer>
+
+    <div class="video-modal" id="video-modal" hidden>
+      <div class="modal-backdrop"></div>
+      <section class="video-panel" role="dialog" aria-modal="true" aria-label="Fullscreen prank video">
+        <button class="close-button" id="close-video" type="button" aria-label="Close surprise">×</button>
+        <div class="video-frame">
+          <video id="prank-video" controls playsinline preload="metadata">
+            <source src="/media/free-claim.mp4" type="video/mp4" />
+            Your browser does not support this video.
+          </video>
+        </div>
+      </section>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
